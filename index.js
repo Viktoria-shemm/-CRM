@@ -1,3 +1,4 @@
+'use strict';
 const product_name = "iphone";
 const product_quantity = 1;
 const product_category = "mobile devices";
