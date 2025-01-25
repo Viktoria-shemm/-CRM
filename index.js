@@ -1,6 +1,6 @@
-const product_name = "name";
-const product_quantity = "quantity";
-const product_category = "category";
-const product_price = "price";
+const product_name = "iphone";
+const product_quantity = 1;
+const product_category = "mobile devices";
+const product_price = 90000;
 
 console.log(product_name);
