@@ -1,25 +1,49 @@
-'use strict'; 
+"use strict";
 
-const product_name = prompt("Введите наименование товара:", "Наименование товара"); 
-const product_quantity = prompt("Введите количество товара:", "Количество товара"); 
-const product_category = prompt("Введите категорию товара:", "Категория товара"); 
-const product_price = prompt("Введите цену товара:", "Цена товара"); 
+{
+  const product_name = "iphone";
+  const product_quantity = 1;
+  const product_category = "mobile devices";
+  const product_price = 90000;
 
+  console.log(product_name);
+}
 
-console.log("Наименование товара: " + product_name);
-console.log("Количество товара: " + product_quantity);
-console.log("Категория товара: " + product_category);
-console.log("Цена товара: " + product_price);
+{
+  const productName = prompt(
+    "Введите наименование товара:",
+    "Наименование товара"
+  );
+  const productQuantity = prompt(
+    "Введите количество товара:",
+    "Количество товара"
+  );
+  const productCategory = prompt(
+    "Введите категорию товара:",
+    "Категория товара"
+  );
+  const productPrice = prompt(
+    "Введите цену товара:", 
+    "Цена товара"
+  );
 
-const product_quantity_number = Number(product_quantity);
-const product_price_number = Number(product_price);
+  console.log("Наименование товара: " + productName);
+  console.log("Количество товара: " + productQuantity);
+  console.log("Категория товара: " + productCategory);
+  console.log("Цена товара: " + productPrice);
 
-console.log("Количество товара: " + product_quantity_number);
-console.log("Цена товара: " + product_price_number);
+  const productQuantityNumber = Number(productQuantity);
+  const productPriceNumber = Number(productPrice);
 
-console.log(typeof product_quantity_number);
-console.log(typeof product_price_number);
+  console.log("Количество товара: " + productQuantityNumber);
+  console.log("Цена товара: " + productPriceNumber);
 
-const total_amount = product_quantity * product_price;
+  console.log(typeof productQuantityNumber);
+  console.log(typeof productPriceNumber);
 
-console.log(`На складе ${product_quantity} единицы товара "${product_name}" на сумму ${total_amount} деревянных`);
+  const totalAmount = productQuantityNumber * productPriceNumber;
+
+  console.log(
+    `На складе ${productQuantityNumber} единицы товара "${productName}" на сумму ${totalAmount} деревянных`
+  );
+}
